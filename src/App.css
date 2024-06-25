@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App-header {
+  background-color: #acc88e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#menuButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  transition: color 0.3s;
+}
+
+#menuButton:hover {
+  color: #f0f0f0;
+}
+
+.sidebar {
+  background-color: #cddeb8;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.sidebar.active {
+  transform: translateX(250px);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.menu-button {
+  background-color: #71964c;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  width: 80%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button:hover {
+  background-color: #567739;
+  transform: scale(1.05);
+}
+
+.content {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.function-buttons-container {
+  margin-top: 20px;
+}
+
+.function-button {
+  background-color: #71964c;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.function-button:hover {
+  background-color: #567739;
+  transform: scale(1.05);
+}
+
+.email-form-container,
+.geo-form-container,
+.whatsapp-form-container,
+.sms-form-container,
+.text-to-audio-form-container,
+.google-scrap-form-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-align: left;
+}
+
+.email-form-container label,
+.geo-form-container label,
+.whatsapp-form-container label,
+.sms-form-container label,
+.text-to-audio-form-container label,
+.google-scrap-form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.email-form-container input,
+.geo-form-container input,
+.whatsapp-form-container input,
+.sms-form-container input,
+.text-to-audio-form-container input,
+.google-scrap-form-container input,
+.email-form-container textarea,
+.geo-form-container textarea,
+.whatsapp-form-container textarea,
+.sms-form-container textarea,
+.text-to-audio-form-container textarea,
+.google-scrap-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.email-form-container button,
+.geo-form-container button,
+.whatsapp-form-container button,
+.sms-form-container button,
+.text-to-audio-form-container button,
+.google-scrap-form-container button {
+  background-color: #71964c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.email-form-container button:hover,
+.geo-form-container button:hover,
+.whatsapp-form-container button:hover,
+.sms-form-container button:hover,
+.text-to-audio-form-container button:hover,
+.google-scrap-form-container button:hover {
+  background-color: #567739;
+}
